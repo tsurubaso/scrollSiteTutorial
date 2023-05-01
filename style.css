@@ -37,12 +37,12 @@ body::after{
     left: 50%;
     transform:translate(-50%);
     z-index: 1;
-    font-size: 1.8rem;
-    /* opacity: 0; */
+    font-size: 2rem;
+     opacity: 0; 
 
 }
 
-title.active{
+.title.active{
     opacity: 1;
     transition: all 3s;
     
@@ -64,7 +64,7 @@ section{
     height: 40%;
     width: 1px;
     overflow: hidden;
-    /* opacity: 0; */
+    
     
 }
 
@@ -85,8 +85,8 @@ section{
     transform: scale(1.6);
 
 }
-
-.img-wrap.title.active>.img{
+/*une erreur ici peut etre*/
+.img-wrap.active>.img{
     transform: scale(1);
     transition: 1s ease-out;
 }
@@ -99,10 +99,11 @@ h2{
     letter-spacing: 2px;
     opacity: 0;
     transition: all 0.2s;
-
-
-
-
 }
 
 
+h2.active{
+    opacity: 1;
+    transition: opacity 3s;
+
+}
